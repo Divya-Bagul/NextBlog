@@ -1,12 +1,25 @@
 .main {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6rem;
+  justify-content: space-between; */
+  /* align-items: center; */
+  /* padding: 6rem; */
   min-height: 100vh;
 }
+.dark{
+  background-color: black !important;
 
+}
+.dropdownToggle{
+    color: white !important;
+}
+.banner{
+ background-color: black;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ min-height: 90vh;
+}
 .description {
   display: inherit;
   justify-content: inherit;
