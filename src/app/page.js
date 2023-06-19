@@ -3,7 +3,7 @@ import styles from './page.module.css'
 import './styles.css'
 import {Button,Col,Container,Form,Nav,Navbar,NavDropdown, Row} from 'react-bootstrap';
 import { useRouter } from "next/navigation";
-
+import About from './about/page';
 export default function Home() {
   const router = useRouter();
   return (

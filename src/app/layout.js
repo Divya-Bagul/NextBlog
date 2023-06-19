@@ -11,7 +11,7 @@ import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
 
 import {Button,Container,Form,Nav,Navbar,NavDropdown} from 'react-bootstrap';
-
+import 'animate.css';
 
 const inter = Inter({ subsets: ['latin'] })
 

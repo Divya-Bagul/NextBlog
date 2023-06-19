@@ -4,23 +4,33 @@ import '../styles.css'
 import { Accordion, Button, Col, Container, Form, Nav, Navbar, NavDropdown, Row } from 'react-bootstrap';
 import { useRouter } from "next/navigation";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useState } from 'react';
+
 
 export default function About() {
     const router = useRouter();
+    const[name,setName] = useState('');
+
+    function getData(){
+
+        alert('Thank You '+ name +  ' For Contact Us')
+    }
     return (
         <>
             <Container fluid >
                 <Row className={styles.dark}>
                     <hr></hr>
+                  
                 </Row>
-               
+              
+
                 <Row className={`${styles.banner}     text-light`} >
                     <Col lg={12} >
-                    <section id="contact">
+                    <section id="contact ">
 
                         <h1 className="section-header">Contact</h1>
 
-                        <div className="contact-wrapper">
+                        <div className="contact-wrapper animate__animated animate__slideInDown">
 
                            
 
@@ -28,7 +38,7 @@ export default function About() {
 
                                 <div className="form-group">
                                     <div className="col-sm-12">
-                                        <input type="text" className="form-control" id="name" placeholder="NAME" name="name"  required />
+                                        <input type="text" className="form-control" id="name" placeholder="NAME" name="name"  required  onChange={(e)=>setName(e.target.value)}/>
                                     </div>
                                 </div>
 
@@ -40,7 +50,7 @@ export default function About() {
 
                                 <textarea className="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
 
-                                <button className="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+                                <button className="btn btn-primary send-button" id="submit" type="submit" value="SEND" onClick={getData}>
                                     <div className="alt-send-button">
                                      <span className="send-text">SEND</span>
                                     </div>
